@@ -1,0 +1,101 @@
+{
+  "store_info": {
+    "nom": "Riwa9 Store",
+    "whatsapp": "05 XX XX XX XX",
+    "adresse": "Oran, Bir El Djir",
+    "horaires": "9h - 21h tous les jours"
+  },
+
+  "products": {
+    "tshirt": {
+      "nom": "T-shirt",
+      "prix": 1200,
+      "stock": true,
+      "tailles": ["S", "M", "L", "XL"],
+      "couleurs": ["blanc", "noir", "gris", "bleu"]
+    },
+    "jean": {
+      "nom": "Jean",
+      "prix": 3500,
+      "stock": true,
+      "tailles": ["38", "40", "42", "44"],
+      "couleurs": ["bleu", "noir", "gris"]
+    },
+    "veste": {
+      "nom": "Veste",
+      "prix": 5500,
+      "stock": false,
+      "tailles": ["M", "L", "XL"],
+      "couleurs": ["noir", "marron"]
+    },
+    "robe": {
+      "nom": "Robe",
+      "prix": 2800,
+      "stock": true,
+      "tailles": ["S", "M", "L"],
+      "couleurs": ["rouge", "noir", "blanc", "rose"]
+    },
+    "chaussure": {
+      "nom": "Chaussure",
+      "prix": 4200,
+      "stock": true,
+      "tailles": ["39", "40", "41", "42", "43"],
+      "couleurs": ["noir", "blanc", "marron"]
+    }
+  },
+
+  "faq": [
+    {
+      "question": "livraison",
+      "answer": "🚚 Livraison gratuite dès 5000 DA. Délai: 2-3 jours."
+    },
+    {
+      "question": "paiement",
+      "answer": "💳 Paiement à la livraison ou virement CCP."
+    },
+    {
+      "question": "retour echange",
+      "answer": "🔄 Retour/échange dans les 7 jours. Produit non utilisé."
+    },
+    {
+      "question": "horaire",
+      "answer": "🕘 On est dispo 9h-21h tous les jours."
+    },
+    {
+      "question": "contact whatsapp",
+      "answer": "📱 WhatsApp: 05 XX XX XX XX"
+    },
+    {
+      "question": "adresse",
+      "answer": "📍 Oran, Bir El Djir — livraison partout en Algérie."
+    },
+    {
+      "question": "commande suivi",
+      "answer": "📦 Envoyez votre numéro de commande sur WhatsApp."
+    },
+    {
+      "question": "promotion reduction",
+      "answer": "🎉 Suivez notre page pour les promos!"
+    },
+    {
+      "question": "cadeau emballage",
+      "answer": "🎁 Oui, emballage cadeau disponible sur demande."
+    },
+    {
+      "question": "qualite matiere tissu",
+      "answer": "✅ Tous nos produits sont de haute qualité — garantis."
+    },
+    {
+      "question": "taille guide comment choisir",
+      "answer": "📏 Envoyez vos mesures sur WhatsApp, on vous guide."
+    },
+    {
+      "question": "couleur disponible",
+      "answer": "🎨 Dites-nous le produit, on vous envoie les couleurs dispo."
+    },
+    {
+      "question": "commande comment",
+      "answer": "🛒 Envoyez: Produit + Taille + Adresse sur WhatsApp."
+    }
+  ]
+}
