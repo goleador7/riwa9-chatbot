@@ -1,4 +1,4 @@
-from fastapi import FastAPI, Request
+from fastapi.responses import PlainTextResponse
 from fastapi.middleware.cors import CORSMiddleware
 import httpx
 
