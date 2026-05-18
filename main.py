@@ -9,7 +9,8 @@ from bot import get_bot_response
 # CONFIG
 # ============================================================
 
-PAGE_ACCESS_TOKEN = "YOUR_PAGE_ACCESS_TOKEN"
+import os
+PAGE_ACCESS_TOKEN = os.environ.get("PAGE_ACCESS_TOKEN", "")
 VERIFY_TOKEN      = "riwa9token123"
 
 # ============================================================
