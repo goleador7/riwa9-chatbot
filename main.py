@@ -20,6 +20,29 @@ VERIFY_TOKEN      = "riwa9token123"
 # فوق — بعد imports
 processed_messages = set()
 
+
+
+
+app = FastAPI(title="Riwa9 Chatbot")
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+# ============================================================
+# ROOT
+# ============================================================
+
+@app.get("/")
+def root():
+    return {"status": "Riwa9 Chatbot is running 🚀"}
+
+# ============================================================
+# WEBHOOK VERIFICATION
+# ============================================================
 @app.post("/webhook")
 async def receive_message(request: Request):
     data = await request.json()
@@ -43,27 +66,6 @@ async def receive_message(request: Request):
 
     return {"status": "ok"}
 
-
-app = FastAPI(title="Riwa9 Chatbot")
-
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
-
-# ============================================================
-# ROOT
-# ============================================================
-
-@app.get("/")
-def root():
-    return {"status": "Riwa9 Chatbot is running 🚀"}
-
-# ============================================================
-# WEBHOOK VERIFICATION
-# ============================================================
 
 @app.get("/webhook")
 async def verify_webhook(request: Request):
