@@ -17,6 +17,33 @@ VERIFY_TOKEN      = "riwa9token123"
 # APP SETUP
 # ============================================================
 
+# فوق — بعد imports
+processed_messages = set()
+
+@app.post("/webhook")
+async def receive_message(request: Request):
+    data = await request.json()
+
+    if data.get("object") == "page":
+        for entry in data.get("entry", []):
+            for event in entry.get("messaging", []):
+                sender_id  = event["sender"]["id"]
+                message_id = event.get("message", {}).get("mid", "")
+
+                # تحقق واش جاوبنا على هاد الـ message
+                if message_id in processed_messages:
+                    continue  # تجاهلو
+
+                processed_messages.add(message_id)
+
+                user_message = event.get("message", {}).get("text", "")
+                if user_message:
+                    reply = get_bot_response(user_message)
+                    await send_message(sender_id, reply)
+
+    return {"status": "ok"}
+
+
 app = FastAPI(title="Riwa9 Chatbot")
 
 app.add_middleware(
