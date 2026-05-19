@@ -1,123 +1,116 @@
 {
   "store_info": {
-    "nom": "DZ Fashion Store",
+    "name": "DZ Fashion Store",
     "whatsapp": "05 54 32 10 87",
-    "adresse": "Oran, Bir El Djir",
-    "horaires": "9h - 22h tous les jours",
-    "livraison": {
-      "wilayas": 69,
-      "domicile": "400 – 1200 DA (selon wilaya)",
-      "bureau": "300 – 700 DA (selon wilaya)",
-      "delai": "2 – 5 jours ouvrables"
-    },
-    "commande_form": "Envoyez sur WhatsApp:\n• Produit\n• Taille + Couleur\n• Wilaya\n• Domicile ou Bureau\n• Nom complet\n• Téléphone\n• Adresse"
+    "address": "Oran, Bir El Djir",
+    "delivery": "58 wilayas",
+    "delivery_price_range": "300 DA - 1200 DA"
   },
 
   "brands": {
     "nike": {
-      "nom": "Nike",
-      "categories": ["tshirt", "jogging", "veste"]
+      "products": [
+        "Nike Oversize T-shirt",
+        "Nike Tech Jacket",
+        "Nike Club Short"
+      ]
     },
+
     "adidas": {
-      "nom": "Adidas",
-      "categories": ["tshirt", "jogging", "veste"]
+      "products": [
+        "Adidas Trefoil T-shirt",
+        "Adidas Windbreaker",
+        "Adidas Training Short"
+      ]
     },
+
     "jordan": {
-      "nom": "Jordan",
-      "categories": ["tshirt", "jogging", "veste"]
+      "products": [
+        "Jordan Jumpman T-shirt",
+        "Jordan Hoodie",
+        "Jordan Diamond Short"
+      ]
     }
+  },
+
+  "categories": {
+    "tshirt": [
+      "Nike Oversize T-shirt",
+      "Adidas Trefoil T-shirt",
+      "Jordan Jumpman T-shirt"
+    ],
+
+    "jacket": [
+      "Nike Tech Jacket",
+      "Adidas Windbreaker",
+      "Jordan Hoodie"
+    ],
+
+    "short": [
+      "Nike Club Short",
+      "Adidas Training Short",
+      "Jordan Diamond Short"
+    ]
   },
 
   "products": {
-    "tshirt_nike": {
-      "nom": "T-shirt Nike Oversize",
-      "brand": "nike",
-      "categorie": "tshirt",
-      "prix": 2800,
-      "stock": true,
-      "tailles": ["S", "M", "L", "XL", "XXL"],
-      "couleurs": ["blanc", "noir", "gris", "beige"]
+    "Nike Oversize T-shirt": {
+      "price": 2800,
+      "stock": true
     },
-    "tshirt_adidas": {
-      "nom": "T-shirt Adidas Trefoil",
-      "brand": "adidas",
-      "categorie": "tshirt",
-      "prix": 2600,
-      "stock": true,
-      "tailles": ["S", "M", "L", "XL"],
-      "couleurs": ["blanc", "noir", "bleu marine"]
+
+    "Nike Tech Jacket": {
+      "price": 7800,
+      "stock": true
     },
-    "tshirt_jordan": {
-      "nom": "T-shirt Jordan Jumpman",
-      "brand": "jordan",
-      "categorie": "tshirt",
-      "prix": 3500,
-      "stock": true,
-      "tailles": ["S", "M", "L", "XL"],
-      "couleurs": ["noir", "blanc", "rouge"]
+
+    "Nike Club Short": {
+      "price": 2700,
+      "stock": false
     },
-    "jogging_nike": {
-      "nom": "Jogging Nike Tech Fleece",
-      "brand": "nike",
-      "categorie": "jogging",
-      "prix": 7500,
-      "stock": true,
-      "tailles": ["S", "M", "L", "XL"],
-      "couleurs": ["noir", "gris", "navy"]
+
+    "Adidas Trefoil T-shirt": {
+      "price": 2600,
+      "stock": true
     },
-    "jogging_adidas": {
-      "nom": "Jogging Adidas Beckenbauer",
-      "brand": "adidas",
-      "categorie": "jogging",
-      "prix": 6500,
-      "stock": true,
-      "tailles": ["S", "M", "L", "XL", "XXL"],
-      "couleurs": ["noir/blanc", "navy/blanc"]
+
+    "Adidas Windbreaker": {
+      "price": 6900,
+      "stock": true
     },
-    "jogging_jordan": {
-      "nom": "Jogging Jordan Fleece",
-      "brand": "jordan",
-      "categorie": "jogging",
-      "prix": 6800,
-      "stock": false,
-      "tailles": ["M", "L", "XL"],
-      "couleurs": ["noir", "rouge"]
+
+    "Adidas Training Short": {
+      "price": 2500,
+      "stock": true
     },
-    "veste_nike": {
-      "nom": "Veste Nike Windrunner",
-      "brand": "nike",
-      "categorie": "veste",
-      "prix": 7800,
-      "stock": true,
-      "tailles": ["S", "M", "L", "XL"],
-      "couleurs": ["noir/blanc", "bleu/rouge"]
+
+    "Jordan Jumpman T-shirt": {
+      "price": 3500,
+      "stock": true
     },
-    "veste_adidas": {
-      "nom": "Veste Adidas Track Jacket",
-      "brand": "adidas",
-      "categorie": "veste",
-      "prix": 7200,
-      "stock": true,
-      "tailles": ["S", "M", "L", "XL"],
-      "couleurs": ["noir", "bleu marine", "vert"]
+
+    "Jordan Hoodie": {
+      "price": 6800,
+      "stock": false
     },
-    "veste_jordan": {
-      "nom": "Veste Jordan Essentials",
-      "brand": "jordan",
-      "categorie": "veste",
-      "prix": 8500,
-      "stock": false,
-      "tailles": ["S", "M", "L"],
-      "couleurs": ["noir", "rouge/noir"]
+
+    "Jordan Diamond Short": {
+      "price": 3200,
+      "stock": true
     }
   },
 
-  "faq": {
-    "livraison": "🚚 On livre dans les 69 wilayas!\n• Domicile: 400–1200 DA\n• Bureau: 300–700 DA\nDélai: 2–5 jours selon la wilaya.",
-    "paiement": "💳 On accepte:\n• Cash à la livraison\n• BaridiMob\n• CCP / CIB / Edahabia",
-    "commande": "🛒 Pour commander sur WhatsApp:\n• Produit + Taille + Couleur\n• Wilaya\n• Domicile ou Bureau\n• Nom complet\n• Téléphone\n• Adresse\n\n📱 05 54 32 10 87",
-    "retour": "🔄 Retour accepté sous 7 jours.\nProduit non porté + étiquette intacte.",
-    "original": "✅ Tous nos produits sont 100% originaux. Qualité garantie ou remboursé.",
-    "taille": "📏 Envoyez vos mesures sur WhatsApp, on vous guide pour choisir la bonne taille 😊"
+  "responses": {
+    "greeting": "👋 Salam! Bienvenue chez DZ Fashion Store 🔥\n\nVous pouvez demander:\n• 🏷️ Les marques disponibles\n• 👕 Nos catégories\n• 💰 Prix d'un produit\n• 📦 Stock disponible\n• 🚚 Livraison\n• 🛒 Comment commander",
+
+    "brand_question": "🏷️ Produits disponibles pour {brand}:\n{products}",
+
+    "category_question": "📂 Produits disponibles dans {category}:\n{products}",
+
+    "product_question": "🛍️ {product}\n💰 Prix: {price} DA\n📦 Stock: {stock}",
+
+    "delivery_question": "🚚 Livraison disponible dans les 58 wilayas.\n💸 Prix livraison: 300 DA - 1200 DA selon wilaya.",
+
+    "order_tutorial": "🛒 Pour commander envoyez:\n• Produit\n• Taille\n• Couleur\n• Wilaya\n• Adresse\n• Numéro téléphone\n\n📱 WhatsApp: 05 54 32 10 87"
   }
 }
