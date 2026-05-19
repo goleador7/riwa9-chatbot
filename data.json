@@ -1,101 +1,164 @@
 {
   "store_info": {
-    "nom": "Riwa9 Store",
-    "whatsapp": "05 XX XX XX XX",
-    "adresse": "Oran, Bir El Djir",
-    "horaires": "9h - 21h tous les jours"
+    "nom": "DZ Fashion Store",
+    "whatsapp": "05 54 32 10 87",
+    "adresse": "Oran, Bir El Djir — Livraison 58 wilayas",
+    "horaires": "9h - 22h tous les jours"
   },
 
   "products": {
-    "tshirt": {
-      "nom": "T-shirt",
-      "prix": 1200,
-      "stock": true,
-      "tailles": ["S", "M", "L", "XL"],
-      "couleurs": ["blanc", "noir", "gris", "bleu"]
-    },
-    "jean": {
-      "nom": "Jean",
-      "prix": 3500,
-      "stock": true,
-      "tailles": ["38", "40", "42", "44"],
-      "couleurs": ["bleu", "noir", "gris"]
-    },
-    "veste": {
-      "nom": "Veste",
-      "prix": 5500,
-      "stock": false,
-      "tailles": ["M", "L", "XL"],
-      "couleurs": ["noir", "marron"]
-    },
-    "robe": {
-      "nom": "Robe",
+    "tshirt_nike": {
+      "nom": "T-shirt Nike Oversize",
       "prix": 2800,
       "stock": true,
-      "tailles": ["S", "M", "L"],
-      "couleurs": ["rouge", "noir", "blanc", "rose"]
+      "tailles": ["S", "M", "L", "XL", "XXL"],
+      "couleurs": ["blanc", "noir", "gris chiné", "beige", "kaki"]
     },
-    "chaussure": {
-      "nom": "Chaussure",
-      "prix": 4200,
+    "tshirt_essentials": {
+      "nom": "T-shirt Fear of God Essentials",
+      "prix": 3200,
       "stock": true,
-      "tailles": ["39", "40", "41", "42", "43"],
-      "couleurs": ["noir", "blanc", "marron"]
+      "tailles": ["S", "M", "L", "XL"],
+      "couleurs": ["cream", "noir", "gris", "brown"]
+    },
+    "hoodie_champion": {
+      "nom": "Hoodie Champion",
+      "prix": 5500,
+      "stock": true,
+      "tailles": ["S", "M", "L", "XL", "XXL"],
+      "couleurs": ["noir", "gris", "navy", "bordeaux"]
+    },
+    "hoodie_jordan": {
+      "nom": "Hoodie Jordan Fleece",
+      "prix": 6800,
+      "stock": false,
+      "tailles": ["M", "L", "XL"],
+      "couleurs": ["noir", "rouge", "blanc"]
+    },
+    "jean_straight": {
+      "nom": "Jean Straight Fit",
+      "prix": 4500,
+      "stock": true,
+      "tailles": ["38", "40", "42", "44", "46"],
+      "couleurs": ["bleu clair", "bleu foncé", "noir", "gris"]
+    },
+    "jean_baggy": {
+      "nom": "Jean Baggy Y2K",
+      "prix": 5200,
+      "stock": true,
+      "tailles": ["38", "40", "42", "44"],
+      "couleurs": ["bleu washed", "noir washed", "gris"]
+    },
+    "jogging_nike": {
+      "nom": "Jogging Nike Tech Fleece",
+      "prix": 7500,
+      "stock": true,
+      "tailles": ["S", "M", "L", "XL"],
+      "couleurs": ["noir", "gris", "navy", "olive"]
+    },
+    "veste_zara": {
+      "nom": "Veste Zara Man",
+      "prix": 8900,
+      "stock": true,
+      "tailles": ["S", "M", "L", "XL"],
+      "couleurs": ["camel", "noir", "beige"]
+    },
+    "short_adidas": {
+      "nom": "Short Adidas Training",
+      "prix": 2500,
+      "stock": true,
+      "tailles": ["S", "M", "L", "XL", "XXL"],
+      "couleurs": ["noir", "bleu marine", "gris"]
+    },
+    "casquette": {
+      "nom": "Casquette New Era 59Fifty",
+      "prix": 3800,
+      "stock": true,
+      "tailles": ["unique"],
+      "couleurs": ["noir", "blanc", "navy", "rouge"]
     }
   },
 
   "faq": [
     {
-      "question": "livraison",
-      "answer": "🚚 Livraison 69 wilaya . Délai: 2-3 jours."
+      "question": "livraison wilaya",
+      "answer": "🚚 Livraison disponible dans les 58 wilayas!\n• Domicile: 400-600 DA\n• Bureau: 300 DA\nDélai: 2-4 jours ouvrables."
     },
     {
-      "question": "paiement",
-      "answer": "💳 Paiement à la livraison ou virement CCP."
+      "question": "livraison gratuite",
+      "answer": "🎁 Livraison gratuite à partir de 8000 DA d'achat!"
     },
     {
-      "question": "retour echange",
-      "answer": "🔄 Retour/échange dans les 7 jours. Produit non utilisé."
+      "question": "paiement comment",
+      "answer": "💳 On accepte:\n• Paiement à la livraison (cash)\n• Virement CCP\n• BaridiMob\n• Paiement en ligne CIB/Edahabia"
     },
     {
-      "question": "horaire",
-      "answer": "🕘 On est dispo 9h-21h tous les jours."
+      "question": "retour echange produit",
+      "answer": "🔄 Retour/échange accepté sous 7 jours.\nConditions:\n• Produit non porté\n• Étiquette intacte\n• Emballage d'origine"
     },
     {
-      "question": "contact whatsapp",
-      "answer": "📱 WhatsApp: 05 XX XX XX XX"
+      "question": "taille comment choisir guide",
+      "answer": "📏 Pour choisir votre taille:\nEnvoyez vos mesures sur WhatsApp (tour de poitrine, tour de taille, hauteur) et on vous guide 😊"
     },
     {
-      "question": "adresse",
-      "answer": "📍 Oran, Bir El Djir — livraison partout en Algérie."
+      "question": "original authentique produit",
+      "answer": "✅ Tous nos produits sont 100% originaux.\nOn travaille avec des fournisseurs certifiés — qualité garantie ou remboursé!"
     },
     {
-      "question": "commande suivi",
-      "answer": "📦 Envoyez votre numéro de commande sur WhatsApp."
+      "question": "commande comment passer",
+      "answer": "🛒 Pour commander:\n1️⃣ Choisissez le produit\n2️⃣ Envoyez sur WhatsApp:\n   • Nom du produit\n   • Taille + Couleur\n   • Nom complet\n   • Adresse + Wilaya\n   • Numéro de téléphone"
     },
     {
-      "question": "promotion reduction",
-      "answer": "🎉 Suivez notre page pour les promos!"
+      "question": "suivi commande colis",
+      "answer": "📦 Pour suivre votre commande:\nEnvoyez votre numéro de commande sur WhatsApp.\nOn vous donne le code de suivi Yalidine/Zaki."
+    },
+    {
+      "question": "delai reception",
+      "answer": "⏱️ Délais de livraison:\n• Oran + Alger: 1-2 jours\n• Nord: 2-3 jours\n• Sud: 3-5 jours"
+    },
+    {
+      "question": "promotion solde promo code",
+      "answer": "🔥 Suivez notre page Facebook et Instagram pour les promos!\nAbonnez-vous aux stories pour être les premiers informés 😉"
+    },
+    {
+      "question": "stock rupture disponible",
+      "answer": "📲 Pour être notifié quand un article revient en stock:\nEnvoyez 'NOTIFY + nom du produit' sur WhatsApp."
+    },
+    {
+      "question": "gros detail grossiste",
+      "answer": "🏪 On fait aussi la vente en gros!\nContactez-nous sur WhatsApp pour les tarifs grossiste."
     },
     {
       "question": "cadeau emballage",
-      "answer": "🎁 Oui, emballage cadeau disponible sur demande."
+      "answer": "🎁 Emballage cadeau disponible!\nMentionnez-le dans votre commande — +200 DA."
     },
     {
-      "question": "qualite matiere tissu",
-      "answer": "✅ Tous nos produits sont de haute qualité — garantis."
+      "question": "horaire ouverture",
+      "answer": "🕘 On répond tous les jours de 9h à 22h.\nLes commandes passées après 20h sont traitées le lendemain matin."
     },
     {
-      "question": "taille guide comment choisir",
-      "answer": "📏 Envoyez vos mesures sur WhatsApp, on vous guide."
+      "question": "wach produits original",
+      "answer": "✅ Wakha! Ga3 produits ta3na original 100%.\nNkhadmo ma3 fournisseurs معروفين — qualité مضمونة."
     },
     {
-      "question": "couleur disponible",
-      "answer": "🎨 Dites-nous le produit, on vous envoie les couleurs dispo."
+      "question": "kifach ndir commande",
+      "answer": "🛒 Sahla!\nZid 3la WhatsApp w dir:\n• Nom produit\n• Pointure/taille\n• Couleur\n• Adresse ta3k\nW nhiwlek! 😊"
     },
     {
-      "question": "commande comment",
-      "answer": "🛒 Envoyez: Produit + Taille + Adresse sur WhatsApp."
+      "question": "wach kayen livraison f wilayti",
+      "answer": "🚚 Iyeh! Nkhadmo f 58 wilaya ga3!\nContactez-nous sur WhatsApp w ngollek le prix ta3 livraison."
+    },
+    {
+      "question": "شحال التوصيل",
+      "answer": "🚚 التوصيل:\n• للمنزل: 400-600 دج\n• للمكتب: 300 دج\nالمدة: 2-4 أيام عمل"
+    },
+    {
+      "question": "واش عندكم مقاسات كبيرة",
+      "answer": "✅ إيه! عندنا مقاسات من S حتى XXL.\nابعت قياساتك على WhatsApp ونساعدك تختار 😊"
+    },
+    {
+      "question": "wach kayen soldes",
+      "answer": "🔥 Suivez notre page pour les soldes!\nSouvent on fait des promos -20% à -40% 😍"
     }
   ]
 }
