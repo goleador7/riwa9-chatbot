@@ -2,163 +2,513 @@
   "store_info": {
     "nom": "DZ Fashion Store",
     "whatsapp": "05 54 32 10 87",
-    "adresse": "Oran, Bir El Djir — Livraison 58 wilayas",
-    "horaires": "9h - 22h tous les jours"
+    "adresse": "Oran, Bir El Djir — Livraison 69 wilayas",
+    "horaires": "9h - 22h tous les jours",
+    "instagram": "@dzfashionstore",
+    "facebook": "DZ Fashion Store Official",
+    "livraison": {
+      "wilayas": 69,
+      "domicile_min": 400,
+      "domicile_max": 1200,
+      "bureau_min": 300,
+      "bureau_max": 700,
+      "note": "Le prix dépend de la wilaya et du type de livraison (domicile ou bureau de poste/Yalidine/Zaki)"
+    }
+  },
+
+  "brands": {
+    "nike": {
+      "nom": "Nike",
+      "description": "Marque américaine de sport, connue pour ses sneakers, vêtements de running et streetwear.",
+      "categories": ["tshirt", "jogging", "short", "veste", "chaussure", "casquette"]
+    },
+    "adidas": {
+      "nom": "Adidas",
+      "description": "Marque allemande iconique, streetwear et sport. Connue pour les 3 bandes et les Yeezy.",
+      "categories": ["tshirt", "jogging", "short", "veste", "chaussure", "casquette"]
+    },
+    "jordan": {
+      "nom": "Jordan / Air Jordan",
+      "description": "Sous-marque Nike, culture basket et streetwear haut de gamme.",
+      "categories": ["hoodie", "tshirt", "short", "chaussure"]
+    },
+    "fear_of_god": {
+      "nom": "Fear of God Essentials",
+      "description": "Marque américaine luxury streetwear fondée par Jerry Lorenzo. Style minimaliste premium.",
+      "categories": ["tshirt", "hoodie", "jogging", "short"]
+    },
+    "champion": {
+      "nom": "Champion",
+      "description": "Marque américaine vintage, connue pour les hoodies et sweats à capuche.",
+      "categories": ["hoodie", "tshirt", "short"]
+    },
+    "zara": {
+      "nom": "Zara Man",
+      "description": "Marque espagnole fashion, style européen moderne.",
+      "categories": ["veste", "jean", "chemise", "tshirt"]
+    },
+    "new_era": {
+      "nom": "New Era",
+      "description": "Marque américaine spécialisée dans les casquettes 59Fifty et snapback.",
+      "categories": ["casquette"]
+    },
+    "stussy": {
+      "nom": "Stüssy",
+      "description": "Marque californienne pionnière du streetwear depuis les années 80.",
+      "categories": ["tshirt", "hoodie", "short", "casquette"]
+    },
+    "carhartt": {
+      "nom": "Carhartt WIP",
+      "description": "Marque américaine workwear reconvertie en streetwear premium.",
+      "categories": ["veste", "jean", "tshirt", "casquette"]
+    },
+    "levis": {
+      "nom": "Levi's",
+      "description": "Marque américaine emblématique du jean depuis 1853.",
+      "categories": ["jean"]
+    }
   },
 
   "products": {
-    "tshirt_nike": {
+    "tshirt_nike_oversize": {
       "nom": "T-shirt Nike Oversize",
+      "brand": "nike",
+      "categorie": "tshirt",
       "prix": 2800,
       "stock": true,
       "tailles": ["S", "M", "L", "XL", "XXL"],
-      "couleurs": ["blanc", "noir", "gris chiné", "beige", "kaki"]
+      "couleurs": ["blanc", "noir", "gris chiné", "beige", "kaki"],
+      "description": "T-shirt oversize Nike coupe décontractée, tissu 100% coton lourd."
     },
     "tshirt_essentials": {
       "nom": "T-shirt Fear of God Essentials",
+      "brand": "fear_of_god",
+      "categorie": "tshirt",
       "prix": 3200,
       "stock": true,
       "tailles": ["S", "M", "L", "XL"],
-      "couleurs": ["cream", "noir", "gris", "brown"]
+      "couleurs": ["cream", "noir", "gris", "brown"],
+      "description": "T-shirt premium FOG Essentials, logo floqué dos, coupe boxy."
+    },
+    "tshirt_stussy": {
+      "nom": "T-shirt Stüssy Stock Logo",
+      "brand": "stussy",
+      "categorie": "tshirt",
+      "prix": 3000,
+      "stock": true,
+      "tailles": ["S", "M", "L", "XL"],
+      "couleurs": ["blanc", "noir", "vert", "tie-dye"],
+      "description": "T-shirt Stüssy iconique avec le logo signature en écriture cursive."
+    },
+    "tshirt_adidas": {
+      "nom": "T-shirt Adidas Trefoil",
+      "brand": "adidas",
+      "categorie": "tshirt",
+      "prix": 2600,
+      "stock": true,
+      "tailles": ["S", "M", "L", "XL", "XXL"],
+      "couleurs": ["blanc", "noir", "bleu marine", "rouge"],
+      "description": "T-shirt classique Adidas avec logo Trefoil brodé sur la poitrine."
+    },
+    "tshirt_jordan": {
+      "nom": "T-shirt Jordan Jumpman",
+      "brand": "jordan",
+      "categorie": "tshirt",
+      "prix": 3500,
+      "stock": true,
+      "tailles": ["S", "M", "L", "XL"],
+      "couleurs": ["noir", "blanc", "rouge", "gris"],
+      "description": "T-shirt Jordan avec logo Jumpman brodé, tissu breathable."
+    },
+    "tshirt_carhartt": {
+      "nom": "T-shirt Carhartt WIP Script",
+      "brand": "carhartt",
+      "categorie": "tshirt",
+      "prix": 2900,
+      "stock": false,
+      "tailles": ["M", "L", "XL"],
+      "couleurs": ["beige", "vert militaire", "noir"],
+      "description": "T-shirt Carhartt WIP coupe loose avec logo Script."
     },
     "hoodie_champion": {
-      "nom": "Hoodie Champion",
+      "nom": "Hoodie Champion Reverse Weave",
+      "brand": "champion",
+      "categorie": "hoodie",
       "prix": 5500,
       "stock": true,
       "tailles": ["S", "M", "L", "XL", "XXL"],
-      "couleurs": ["noir", "gris", "navy", "bordeaux"]
+      "couleurs": ["noir", "gris", "navy", "bordeaux"],
+      "description": "Hoodie Champion Reverse Weave, tissu épais anti-rétrécissement."
     },
     "hoodie_jordan": {
       "nom": "Hoodie Jordan Fleece",
+      "brand": "jordan",
+      "categorie": "hoodie",
       "prix": 6800,
       "stock": false,
       "tailles": ["M", "L", "XL"],
-      "couleurs": ["noir", "rouge", "blanc"]
+      "couleurs": ["noir", "rouge", "blanc"],
+      "description": "Hoodie Jordan en fleece chaud avec poche kangourou et logo brodé."
+    },
+    "hoodie_essentials": {
+      "nom": "Hoodie Fear of God Essentials",
+      "brand": "fear_of_god",
+      "categorie": "hoodie",
+      "prix": 7200,
+      "stock": true,
+      "tailles": ["S", "M", "L", "XL"],
+      "couleurs": ["cream", "gris clair", "noir", "taupe"],
+      "description": "Hoodie FOG Essentials luxury streetwear, coupe dropped shoulder."
+    },
+    "hoodie_stussy": {
+      "nom": "Hoodie Stüssy Basic",
+      "brand": "stussy",
+      "categorie": "hoodie",
+      "prix": 5800,
+      "stock": true,
+      "tailles": ["S", "M", "L", "XL"],
+      "couleurs": ["noir", "vert", "bleu", "bordeaux"],
+      "description": "Hoodie Stüssy avec logo brodé poitrine, tissu lourd 400g."
     },
     "jean_straight": {
       "nom": "Jean Straight Fit",
+      "brand": "levis",
+      "categorie": "jean",
       "prix": 4500,
       "stock": true,
       "tailles": ["38", "40", "42", "44", "46"],
-      "couleurs": ["bleu clair", "bleu foncé", "noir", "gris"]
+      "couleurs": ["bleu clair", "bleu foncé", "noir", "gris"],
+      "description": "Jean Levi's coupe straight classique, denim 12oz."
     },
     "jean_baggy": {
       "nom": "Jean Baggy Y2K",
+      "brand": "levis",
+      "categorie": "jean",
       "prix": 5200,
       "stock": true,
       "tailles": ["38", "40", "42", "44"],
-      "couleurs": ["bleu washed", "noir washed", "gris"]
+      "couleurs": ["bleu washed", "noir washed", "gris"],
+      "description": "Jean baggy style Y2K, jambe large, taille basse."
+    },
+    "jean_carhartt": {
+      "nom": "Jean Carhartt WIP Klondike",
+      "brand": "carhartt",
+      "categorie": "jean",
+      "prix": 5500,
+      "stock": true,
+      "tailles": ["30", "32", "34", "36"],
+      "couleurs": ["bleu stone", "noir", "brun"],
+      "description": "Jean Carhartt WIP workwear coupe relaxed, denim renforcé."
     },
     "jogging_nike": {
       "nom": "Jogging Nike Tech Fleece",
+      "brand": "nike",
+      "categorie": "jogging",
       "prix": 7500,
       "stock": true,
       "tailles": ["S", "M", "L", "XL"],
-      "couleurs": ["noir", "gris", "navy", "olive"]
+      "couleurs": ["noir", "gris", "navy", "olive"],
+      "description": "Jogging Nike Tech Fleece ultra-léger, tissu technique avec poches zippées."
+    },
+    "jogging_adidas": {
+      "nom": "Jogging Adidas Beckenbauer",
+      "brand": "adidas",
+      "categorie": "jogging",
+      "prix": 6500,
+      "stock": true,
+      "tailles": ["S", "M", "L", "XL", "XXL"],
+      "couleurs": ["noir/blanc", "bleu marine/blanc", "rouge/blanc"],
+      "description": "Jogging Adidas Originals rétro avec bandes latérales, style années 80."
+    },
+    "jogging_essentials": {
+      "nom": "Jogging Fear of God Essentials",
+      "brand": "fear_of_god",
+      "categorie": "jogging",
+      "prix": 6800,
+      "stock": false,
+      "tailles": ["S", "M", "L", "XL"],
+      "couleurs": ["cream", "gris", "noir", "taupe"],
+      "description": "Jogging FOG Essentials coupe oversize avec logo floqué côté jambe."
     },
     "veste_zara": {
       "nom": "Veste Zara Man",
+      "brand": "zara",
+      "categorie": "veste",
       "prix": 8900,
       "stock": true,
       "tailles": ["S", "M", "L", "XL"],
-      "couleurs": ["camel", "noir", "beige"]
+      "couleurs": ["camel", "noir", "beige"],
+      "description": "Veste Zara Man coupe ajustée, style européen moderne, tissu structuré."
+    },
+    "veste_carhartt": {
+      "nom": "Veste Carhartt WIP OG Chore",
+      "brand": "carhartt",
+      "categorie": "veste",
+      "prix": 9500,
+      "stock": true,
+      "tailles": ["S", "M", "L", "XL"],
+      "couleurs": ["kaki", "noir", "vert militaire", "brun"],
+      "description": "Veste workwear iconique Carhartt, toile duck durable, poches multiples."
+    },
+    "veste_nike_windrunner": {
+      "nom": "Veste Nike Windrunner",
+      "brand": "nike",
+      "categorie": "veste",
+      "prix": 7800,
+      "stock": true,
+      "tailles": ["S", "M", "L", "XL"],
+      "couleurs": ["noir/blanc", "bleu/rouge", "vert/noir"],
+      "description": "Veste Nike Windrunner légère coupe-vent, tissu technique déperlant."
     },
     "short_adidas": {
       "nom": "Short Adidas Training",
+      "brand": "adidas",
+      "categorie": "short",
       "prix": 2500,
       "stock": true,
       "tailles": ["S", "M", "L", "XL", "XXL"],
-      "couleurs": ["noir", "bleu marine", "gris"]
+      "couleurs": ["noir", "bleu marine", "gris"],
+      "description": "Short Adidas training en tissu aéré, logo brodé."
     },
-    "casquette": {
+    "short_nike": {
+      "nom": "Short Nike Sportswear Club",
+      "brand": "nike",
+      "categorie": "short",
+      "prix": 2700,
+      "stock": true,
+      "tailles": ["S", "M", "L", "XL"],
+      "couleurs": ["noir", "gris", "blanc", "bleu marine"],
+      "description": "Short Nike classique en molleton léger, cordon ajustable."
+    },
+    "short_jordan": {
+      "nom": "Short Jordan Diamond",
+      "brand": "jordan",
+      "categorie": "short",
+      "prix": 3200,
+      "stock": true,
+      "tailles": ["S", "M", "L", "XL"],
+      "couleurs": ["noir", "blanc", "rouge"],
+      "description": "Short Jordan en tissu Diamond, coupe loose idéale pour le basket."
+    },
+    "casquette_new_era": {
       "nom": "Casquette New Era 59Fifty",
+      "brand": "new_era",
+      "categorie": "casquette",
       "prix": 3800,
       "stock": true,
       "tailles": ["unique"],
-      "couleurs": ["noir", "blanc", "navy", "rouge"]
+      "couleurs": ["noir", "blanc", "navy", "rouge", "kaki"],
+      "description": "Casquette fitted New Era 59Fifty, logo brodé, visière plate."
+    },
+    "casquette_stussy": {
+      "nom": "Casquette Stüssy Snapback",
+      "brand": "stussy",
+      "categorie": "casquette",
+      "prix": 3200,
+      "stock": true,
+      "tailles": ["unique"],
+      "couleurs": ["noir", "blanc cassé", "vert", "rouge"],
+      "description": "Casquette snapback Stüssy avec fermeture réglable, logo brodé."
+    },
+    "casquette_carhartt": {
+      "nom": "Casquette Carhartt WIP",
+      "brand": "carhartt",
+      "categorie": "casquette",
+      "prix": 2800,
+      "stock": true,
+      "tailles": ["unique"],
+      "couleurs": ["kaki", "noir", "bleu marine", "brun"],
+      "description": "Casquette 5 panels Carhartt WIP, tissu canvas durable."
     }
   },
 
   "faq": [
     {
-      "question": "livraison wilaya",
-      "answer": "🚚 Livraison disponible dans les 58 wilayas!\n• Domicile: 400-600 DA\n• Bureau: 300 DA\nDélai: 2-4 jours ouvrables."
+      "question": "livraison wilaya disponible",
+      "answer": "🚚 On livre dans les 69 wilayas d'Algérie!\n• Domicile: 400–1200 DA (selon la wilaya)\n• Bureau Yalidine/Zaki: 300–700 DA\nDélai: 2–5 jours ouvrables."
+    },
+    {
+      "question": "prix livraison domicile bureau",
+      "answer": "📦 Prix livraison:\n• Domicile: entre 400 DA et 1200 DA\n• Bureau (Yalidine/Zaki): entre 300 DA et 700 DA\nLe prix exact dépend de votre wilaya. Donnez-nous votre wilaya pour confirmer 😊"
     },
     {
       "question": "livraison gratuite",
       "answer": "🎁 Livraison gratuite à partir de 8000 DA d'achat!"
     },
     {
-      "question": "paiement comment",
-      "answer": "💳 On accepte:\n• Paiement à la livraison (cash)\n• Virement CCP\n• BaridiMob\n• Paiement en ligne CIB/Edahabia"
+      "question": "paiement comment methode",
+      "answer": "💳 On accepte:\n• Paiement à la livraison (cash)\n• Virement CCP\n• BaridiMob\n• CIB / Edahabia (paiement en ligne)"
     },
     {
       "question": "retour echange produit",
       "answer": "🔄 Retour/échange accepté sous 7 jours.\nConditions:\n• Produit non porté\n• Étiquette intacte\n• Emballage d'origine"
     },
     {
-      "question": "taille comment choisir guide",
+      "question": "taille comment choisir guide mesure",
       "answer": "📏 Pour choisir votre taille:\nEnvoyez vos mesures sur WhatsApp (tour de poitrine, tour de taille, hauteur) et on vous guide 😊"
     },
     {
-      "question": "original authentique produit",
+      "question": "original authentique qualite garantie",
       "answer": "✅ Tous nos produits sont 100% originaux.\nOn travaille avec des fournisseurs certifiés — qualité garantie ou remboursé!"
     },
     {
       "question": "commande comment passer",
-      "answer": "🛒 Pour commander:\n1️⃣ Choisissez le produit\n2️⃣ Envoyez sur WhatsApp:\n   • Nom du produit\n   • Taille + Couleur\n   • Nom complet\n   • Adresse + Wilaya\n   • Numéro de téléphone"
+      "answer": "🛒 Pour commander, envoyez-nous sur WhatsApp:\n• Nom du produit\n• Taille + Couleur\n• Wilaya\n• Domicile ou bureau\n• Nom complet\n• Numéro de téléphone\n• Adresse complète\n\n📱 WhatsApp: 05 54 32 10 87"
     },
     {
-      "question": "suivi commande colis",
-      "answer": "📦 Pour suivre votre commande:\nEnvoyez votre numéro de commande sur WhatsApp.\nOn vous donne le code de suivi Yalidine/Zaki."
+      "question": "formulaire commande format",
+      "answer": "📋 Formulaire de commande:\n———————————\n🛍️ Produit: [nom]\n📏 Taille: [taille]\n🎨 Couleur: [couleur]\n🏙️ Wilaya: [wilaya]\n🚚 Livraison: [Domicile / Bureau]\n👤 Nom complet: [nom]\n📞 Téléphone: [numéro]\n📍 Adresse: [adresse]\n———————————\nEnvoyez ça sur WhatsApp: 05 54 32 10 87 😊"
     },
     {
-      "question": "delai reception",
-      "answer": "⏱️ Délais de livraison:\n• Oran + Alger: 1-2 jours\n• Nord: 2-3 jours\n• Sud: 3-5 jours"
+      "question": "suivi commande colis numero tracking",
+      "answer": "📦 Pour suivre votre commande:\nEnvoyez votre numéro de commande sur WhatsApp.\nOn vous donne le code de suivi Yalidine ou Zaki."
     },
     {
-      "question": "promotion solde promo code",
-      "answer": "🔥 Suivez notre page Facebook et Instagram pour les promos!\nAbonnez-vous aux stories pour être les premiers informés 😉"
+      "question": "delai reception combien temps",
+      "answer": "⏱️ Délais de livraison:\n• Oran + Alger: 1–2 jours\n• Wilayas du Nord: 2–3 jours\n• Wilayas du Sud: 4–5 jours"
     },
     {
-      "question": "stock rupture disponible",
+      "question": "promotion solde promo reduction",
+      "answer": "🔥 Suivez notre Instagram et Facebook pour les promos!\nOn fait souvent des réductions de -20% à -40% 😍"
+    },
+    {
+      "question": "stock rupture notifier alerte",
       "answer": "📲 Pour être notifié quand un article revient en stock:\nEnvoyez 'NOTIFY + nom du produit' sur WhatsApp."
     },
     {
-      "question": "gros detail grossiste",
+      "question": "gros detail grossiste revendeur",
       "answer": "🏪 On fait aussi la vente en gros!\nContactez-nous sur WhatsApp pour les tarifs grossiste."
     },
     {
-      "question": "cadeau emballage",
+      "question": "cadeau emballage cadeau",
       "answer": "🎁 Emballage cadeau disponible!\nMentionnez-le dans votre commande — +200 DA."
     },
     {
-      "question": "horaire ouverture",
-      "answer": "🕘 On répond tous les jours de 9h à 22h.\nLes commandes passées après 20h sont traitées le lendemain matin."
+      "question": "horaire ouverture fermeture",
+      "answer": "🕘 On répond tous les jours de 9h à 22h.\nLes commandes après 20h sont traitées le lendemain matin."
     },
     {
-      "question": "wach produits original",
-      "answer": "✅ Wakha! Ga3 produits ta3na original 100%.\nNkhadmo ma3 fournisseurs معروفين — qualité مضمونة."
+      "question": "quelles marques disponibles vous avez",
+      "answer": "🏷️ Nos marques disponibles:\n• Nike\n• Adidas\n• Jordan\n• Fear of God Essentials\n• Champion\n• Zara Man\n• Stüssy\n• Carhartt WIP\n• New Era\n• Levi's\n\nDites-nous quelle marque vous intéresse pour voir les produits disponibles 😊"
     },
     {
-      "question": "kifach ndir commande",
-      "answer": "🛒 Sahla!\nZid 3la WhatsApp w dir:\n• Nom produit\n• Pointure/taille\n• Couleur\n• Adresse ta3k\nW nhiwlek! 😊"
+      "question": "كيفاش نطلب commande darija",
+      "answer": "🛒 Sahla!\nZid 3la WhatsApp w dir:\n• Nom produit\n• Pointure/taille\n• Couleur\n• Wilaya ta3k\n• Domicile wla bureau\n• Ismek\n• Numéro teléphone\n• 3nawantek\n\nWhatsApp: 05 54 32 10 87 😊"
     },
     {
       "question": "wach kayen livraison f wilayti",
-      "answer": "🚚 Iyeh! Nkhadmo f 58 wilaya ga3!\nContactez-nous sur WhatsApp w ngollek le prix ta3 livraison."
+      "answer": "🚚 Iyeh! Nkhadmo f 69 wilaya ga3!\n• Domicile: 400–1200 DA\n• Bureau: 300–700 DA\nZid 3tini wilaya ta3k w ngollek le prix bl dqiqa 😊"
     },
     {
-      "question": "شحال التوصيل",
-      "answer": "🚚 التوصيل:\n• للمنزل: 400-600 دج\n• للمكتب: 300 دج\nالمدة: 2-4 أيام عمل"
+      "question": "شحال التوصيل livraison arabe",
+      "answer": "🚚 التوصيل:\n• للمنزل: 400 إلى 1200 دج (حسب الولاية)\n• للمكتب (يالدين/زاكي): 300 إلى 700 دج\nالمدة: 2-5 أيام عمل"
     },
     {
-      "question": "واش عندكم مقاسات كبيرة",
+      "question": "واش عندكم مقاسات كبيرة كبار",
       "answer": "✅ إيه! عندنا مقاسات من S حتى XXL.\nابعت قياساتك على WhatsApp ونساعدك تختار 😊"
     },
     {
-      "question": "wach kayen soldes",
-      "answer": "🔥 Suivez notre page pour les soldes!\nSouvent on fait des promos -20% à -40% 😍"
+      "question": "wach produits original authentique darija",
+      "answer": "✅ Wakha! Ga3 produits ta3na original 100%.\nNkhadmo ma3 fournisseurs معروفين — qualité مضمونة أو نرجعولek الفلوس!"
+    },
+    {
+      "question": "wach kayen soldes promo",
+      "answer": "🔥 Suivez notre page Instagram et Facebook!\nSouvent ndir promos -20% à -40% 😍\nZid t3awed 3la stories bah tkoun awel wa7ed t3ref 😉"
+    },
+    {
+      "question": "كيفاش نطلب عربي",
+      "answer": "🛒 طريقة الطلب:\nابعت رسالة على واتساب وقول:\n• اسم المنتج\n• المقاس\n• اللون\n• الولاية\n• توصيل للمنزل أو للمكتب\n• الاسم الكامل\n• رقم الهاتف\n• العنوان\n\nواتساب: 05 54 32 10 87"
+    },
+    {
+      "question": "wach kayen nike adidas jordan",
+      "answer": "✅ Iyeh! 3andna Nike, Adidas, Jordan, Fear of God, Champion, Stüssy, Carhartt, New Era, Zara w Levi's!\nGoleli ach brand t7eb w ngollek ach 3andna 😊"
     }
-  ]
+  ],
+
+  "keywords": {
+    "salutation": {
+      "triggers": ["salam", "bonjour", "hello", "bonsoir", "ahlan", "مرحبا", "hi", "wesh", "labas", "ola", "مساء الخير", "صباح الخير"],
+      "response_fr": "👋 Salam! Bienvenue chez DZ Fashion Store 🔥\nComment je peux vous aider?\n• 💰 Prix d'un produit\n• 📦 Stock disponible\n• 🏷️ Nos marques\n• 📏 Tailles / Couleurs\n• 🚚 Livraison\n• 🛒 Comment commander",
+      "response_ar": "👋 مرحباً! أهلاً بك في DZ Fashion Store 🔥\nكيف نقدر نساعدك؟\n• 💰 سعر منتج\n• 📦 التوفر\n• 🏷️ الماركات\n• 📏 المقاسات\n• 🚚 التوصيل\n• 🛒 كيفاش تطلب",
+      "response_dz": "👋 Wesh! Mrehba bik f DZ Fashion Store 🔥\nAsh t7eb?\n• 💰 Prix produit\n• 📦 Stock\n• 🏷️ Les marques\n• 📏 Tailles\n• 🚚 Livraison\n• 🛒 Commander"
+    },
+    "merci": {
+      "triggers": ["merci", "شكرا", "thank", "barak allah", "شكراً", "i3tik sa7a", "yikhlik"],
+      "response": "😊 Avec plaisir! N'hésitez pas si vous avez d'autres questions. Bonne journée! 🌟"
+    },
+    "stock": {
+      "triggers": ["dispo", "disponible", "kayen", "عندكم", "stock", "wach kayen", "avez-vous", "reste", "موجود", "عندك"],
+      "response_if_found": "✅ {product_name} est disponible!\n💰 Prix: {prix} DA\n📏 Tailles: {tailles}\n🎨 Couleurs: {couleurs}\n\nPour commander 👇\n📱 WhatsApp: 05 54 32 10 87",
+      "response_if_not_found": "❌ {product_name} est actuellement en rupture de stock.\n📲 Pour être notifié du retour: envoyez 'NOTIFY {product_name}' sur WhatsApp.\n📱 05 54 32 10 87"
+    },
+    "prix": {
+      "triggers": ["prix", "combien", "شحال", "bkam", "coute", "tarif", "cher", "thaman", "ثمن", "بكام"],
+      "response_template": "💰 {product_name}: {prix} DA\n{stock_status}\n📏 Tailles: {tailles}\n🎨 Couleurs: {couleurs}"
+    },
+    "taille": {
+      "triggers": ["taille", "pointure", "size", "قياس", "mesure", "مقاس", "tailles disponibles"],
+      "response_template": "📏 Tailles disponibles pour {product_name}:\n{tailles}\n\nVous ne savez pas votre taille? Envoyez vos mesures sur WhatsApp 😊"
+    },
+    "couleur": {
+      "triggers": ["couleur", "color", "لون", "existe en", "couleurs dispo", "coloris"],
+      "response_template": "🎨 Couleurs disponibles pour {product_name}:\n{couleurs}"
+    },
+    "commande": {
+      "triggers": ["commander", "commande", "acheter", "كيفاش نطلب", "order", "طلب", "achat", "buy", "نشري", "kif ndir"],
+      "response": "🛒 Pour passer une commande, envoyez ce formulaire sur WhatsApp:\n\n———————————\n🛍️ Produit: \n📏 Taille: \n🎨 Couleur: \n🏙️ Wilaya: \n🚚 Livraison: Domicile / Bureau\n👤 Nom complet: \n📞 Téléphone: \n📍 Adresse: \n———————————\n\n📱 WhatsApp: 05 54 32 10 87\nOn confirme votre commande dans les minutes qui suivent! ⚡"
+    },
+    "livraison": {
+      "triggers": ["livraison", "expédition", "توصيل", "livrer", "shi", "ywasslou", "yosal", "delivery", "chipping"],
+      "response": "🚚 Livraison dans les 69 wilayas!\n\n📦 Tarifs:\n• Domicile: 400 – 1200 DA\n• Bureau (Yalidine/Zaki): 300 – 700 DA\n\n⏱️ Délais:\n• Oran/Alger: 1–2 jours\n• Nord: 2–3 jours\n• Sud: 4–5 jours\n\nDonnez-nous votre wilaya pour le prix exact 😊"
+    },
+    "marques": {
+      "triggers": ["marque", "brand", "ماركة", "marque dispo", "what brands", "quelles marques", "3andkom", "عندكم"],
+      "response": "🏷️ Nos marques:\n\n• 👟 Nike\n• 🔱 Adidas\n• 🐦 Jordan\n• ⚡ Fear of God Essentials\n• 🏆 Champion\n• 🧥 Zara Man\n• 🌊 Stüssy\n• 🔨 Carhartt WIP\n• 🎩 New Era\n• 👖 Levi's\n\nQuelle marque vous intéresse? 😊"
+    },
+    "nike": {
+      "triggers": ["nike", "نايك"],
+      "response": "👟 Produits Nike disponibles:\n• T-shirt Nike Oversize — 2800 DA ✅\n• Jogging Nike Tech Fleece — 7500 DA ✅\n• Short Nike Sportswear Club — 2700 DA ✅\n• Veste Nike Windrunner — 7800 DA ✅\n\nVous voulez plus d'infos sur un produit spécifique?"
+    },
+    "adidas": {
+      "triggers": ["adidas", "أديداس"],
+      "response": "🔱 Produits Adidas disponibles:\n• T-shirt Adidas Trefoil — 2600 DA ✅\n• Jogging Adidas Beckenbauer — 6500 DA ✅\n• Short Adidas Training — 2500 DA ✅\n\nVous voulez plus d'infos?"
+    },
+    "jordan": {
+      "triggers": ["jordan", "air jordan", "جوردان"],
+      "response": "🐦 Produits Jordan disponibles:\n• T-shirt Jordan Jumpman — 3500 DA ✅\n• Short Jordan Diamond — 3200 DA ✅\n• Hoodie Jordan Fleece — 6800 DA ❌ (rupture)\n\nVous voulez plus d'infos?"
+    },
+    "fear_of_god": {
+      "triggers": ["fear of god", "fog", "essentials", "فيير اوف قود"],
+      "response": "⚡ Produits Fear of God Essentials disponibles:\n• T-shirt FOG Essentials — 3200 DA ✅\n• Hoodie FOG Essentials — 7200 DA ✅\n• Jogging FOG Essentials — 6800 DA ❌ (rupture)\n\nVous voulez plus d'infos?"
+    },
+    "champion": {
+      "triggers": ["champion", "شامبيون"],
+      "response": "🏆 Produits Champion disponibles:\n• Hoodie Champion Reverse Weave — 5500 DA ✅\n\nVous voulez plus d'infos?"
+    },
+    "stussy": {
+      "triggers": ["stussy", "stüssy", "ستوسي"],
+      "response": "🌊 Produits Stüssy disponibles:\n• T-shirt Stüssy Stock Logo — 3000 DA ✅\n• Hoodie Stüssy Basic — 5800 DA ✅\n• Casquette Stüssy Snapback — 3200 DA ✅\n\nVous voulez plus d'infos?"
+    },
+    "carhartt": {
+      "triggers": ["carhartt", "كارهارت"],
+      "response": "🔨 Produits Carhartt WIP disponibles:\n• T-shirt Carhartt WIP Script — 2900 DA ❌ (rupture)\n• Jean Carhartt WIP Klondike — 5500 DA ✅\n• Veste Carhartt WIP OG Chore — 9500 DA ✅\n• Casquette Carhartt WIP — 2800 DA ✅\n\nVous voulez plus d'infos?"
+    },
+    "zara": {
+      "triggers": ["zara", "زارا"],
+      "response": "🧥 Produits Zara Man disponibles:\n• Veste Zara Man — 8900 DA ✅\n\nVous voulez plus d'infos?"
+    },
+    "new_era": {
+      "triggers": ["new era", "59fifty", "نيو ايرا"],
+      "response": "🎩 Produits New Era disponibles:\n• Casquette New Era 59Fifty — 3800 DA ✅\n\nVous voulez plus d'infos?"
+    },
+    "levis": {
+      "triggers": ["levi's", "levis", "ليفيس"],
+      "response": "👖 Produits Levi's disponibles:\n• Jean Straight Fit — 4500 DA ✅\n• Jean Baggy Y2K — 5200 DA ✅\n\nVous voulez plus d'infos?"
+    },
+    "fallback": {
+      "response_fr": "🤔 Je n'ai pas bien compris.\nVous pouvez demander:\n• Prix / Stock d'un produit\n• Nos marques disponibles\n• Tailles / Couleurs\n• Livraison (prix et délais)\n• Comment commander\n\n📱 Ou contactez-nous directement sur WhatsApp: 05 54 32 10 87",
+      "response_dz": "🤔 Ma fhemtch mzyan. Dir wahd had:\n• Prix / Stock produit\n• Les marques\n• Tailles / Couleurs\n• Livraison\n• Kifach tdir commande\n\n📱 WhatsApp: 05 54 32 10 87",
+      "response_ar": "🤔 ما فهمتش مزيان.\nتقدر تسأل على:\n• سعر / توفر منتج\n• الماركات المتاحة\n• المقاسات / الألوان\n• التوصيل\n• كيفاش تطلب\n\n📱 واتساب: 05 54 32 10 87"
+    }
+  }
 }
